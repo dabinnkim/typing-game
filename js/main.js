@@ -4,7 +4,7 @@
 
 //사용변수
 let score = 0;
-let time = 3; //타이핑 할 시간 9초
+let time = 10; //타이핑 할 시간 9초
 let isPlaying = false; //useSate 역할
 let interval;
 let checkInterval;
@@ -37,7 +37,7 @@ function getWords(){
 //게임이 실행중인지 아닌지 실시간으로 확인
 function gameOver(){
     if(time==0 && !isPlaying){
-        buttonChange('게임종료')
+        buttonChange('게임종료/다시시작')
     }
 }
 
@@ -59,7 +59,7 @@ function wordMatch(){
 
 //버튼 누르면 실행하는 함수, onclick에 넣음
 function run(){
-    time=3; //카운트 3부터 다시
+    time=10; //카운트 3부터 다시
     scoreDisplay.innerText=0;//점수 0부터 다시
     wordInput.focus()//input에 자동으로 커서 생김
     interval = setInterval(countDown,1000);
