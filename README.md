@@ -1,4 +1,4 @@
 # typing-game
 자바스크립트 타이핑 게임 클론코딩
 
-![img](https://user-images.githubusercontent.com/107906438/226379109-9ea07d62-b702-4251-a961-8fa9d90f0f4a.gif)
+![img](https://user-images.githubusercontent.com/107906438/226385104-f7092e0d-bb26-4423-a300-0e856a0a2061.gif)
