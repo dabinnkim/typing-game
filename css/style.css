@@ -1,69 +1,112 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: "Ganpan";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  background-color: #eeeeee;
 }
 
-@font-face{
-    font-family: "Ganpan";
-    src:url('./fonts/KCC-Ganpan.woff')
+/* @font-face {
+  font-family: "Ganpan";
+  src: url("./fonts/KCC-Ganpan.woff");
+} */
+
+body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
 }
 
-
-body{
-    display: flex;
-    flex-direction:column;
-    justify-self: center;
-    align-items: center;
+.box {
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: lightgrey;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+.header {
+  margin-top: 37px;
+  text-align: center;
+  padding: 1rem; /*상하좌우 1px*/
 }
 
-.header{
-    width:100%;
-    background-color: #5AD18F;
-    color:white;
-    text-align: center;
-    padding:1rem; /*상하좌우 1px*/
+.word-display {
+  margin-top: 3rem;
+  font-size: 80px;
+  color: #ffae00;
+  text-align: center;
+  font-weight: bold;
 }
 
-.word-display{
-    margin-top:3rem;
-    font-size: 80px;
-    color:#5AD18F;
+.word-input-box {
+  margin-top: 2rem;
+  text-align: center;
 }
 
-.word-input-box{
-    margin-top:2rem;
+.word-input {
+  width: 300px;
+  padding: 0.5rem;
+  text-align: center;
 }
 
-.word-input{
-    width:300px;
-    padding:0.5rem;
+.game-info {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-evenly; /*양옆으로 붙게하기*/
+  text-align: center;
 }
 
-.game-info{
-    width: 200px;
-    margin-top:2rem;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content:space-between; /*양옆으로 붙게하기*/
+.time,
+.score {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.time, .score{
-    font-size: 30px;
+.btn {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
 }
 
-.button{
-    width:200px;
-    height:35px;
-    background-color: #5AD18F;
-    color:white;
-    border: none;
-    margin-top:3rem;
-    cursor: pointer;
+.button {
+  width: 200px;
+  height: 3em;
+  margin-top: 3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(235, 235, 235);
+  box-shadow: inset 3px 3px 6px #d1d1d1, inset -3px -3px 6px #ffffff;
+  top: 6.5em;
+  left: 1.5em;
+  transition: 0.4s ease-in-out;
+  text-align: center;
 }
 
 /*로딩중일때 붙일 class*/
-.loading{
-    background-color: grey;
-    cursor:not-allowed;
+.loading {
+  background-color: #ffffff;
+}
+
+/* Phone */
+.phone {
+  position: relative;
+  z-index: 2;
+  width: 34rem;
+  /* height: 17rem; */
+  background-color: inherit;
+  -webkit-box-shadow: 0 4px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 16px #a6a6a6, -8px -8px 16px #ffffff;
+  border-radius: 40px;
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
